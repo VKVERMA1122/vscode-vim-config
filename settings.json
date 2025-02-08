@@ -1,16 +1,63 @@
 {
-  "window.density.editorTabHeight": "compact",
-  "workbench.activityBar.location": "top",
-  "editor.codeActionsOnSave": {
-    "source.addMissingImports": true,
-    "source.organizeImports": true
+  "files.autoSave": "afterDelay",
+  "explorer.confirmDragAndDrop": false,
+  "editor.fontSize": 16,
+  "editor.columnSelection": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
-  "editor.formatOnSave": true,
-  "editor.inlineSuggest.enabled": true,
-  "editor.lineNumbers": "relative",
-  "editor.suggest.insertMode": "replace",
-  "editor.wordWrap": "on",
   "git.autofetch": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.enableSmartCommit": true,
+  "editor.fontLigatures": true,
+  "json.maxItemsComputed": 6000,
+  "editor.fontFamily": "FiraCode NFM,Aial Rounded MT Bold",
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "workbench.startupEditor": "none",
+  "notebook.output.textLineLimit": 50,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "FiraCode NFM,Aial Rounded MT Bold",
+  "editor.codeLensFontFamily": "FiraCode NFM,Aial Rounded MT Bold",
+  "editor.inlayHints.fontFamily": "FiraCode NFM,Aial Rounded MT Bold",
+  "debug.console.fontFamily": "FiraCode NFM,Aial Rounded MT Bold",
+  "editor.suggest.insertMode": "replace",
+  "terminal.external.windowsExec": "C:\\Program Files (x86)\\PowerShell\\7\\pwsh.exe",
+  "terminal.explorerKind": "external",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Windows PowerShell": {
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    }
+  },
+  "editor.accessibilitySupport": "off",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "window.zoomLevel": -1,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    //"source.organizeImports": "explicit",
+    "source.addMissingImports": "explicit"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "editor.wordWrap": "on",
   "vim.leader": "<space>",
   "vim.foldfix": true,
   "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
@@ -33,7 +80,7 @@
     },
     {
       "before": [
-        "p",
+        "p"
       ],
       "after": [
         "p",
@@ -61,15 +108,6 @@
         ":nohl"
       ]
     },
-    // {
-    //   "before": [
-    //     "j",
-    //     "k"
-    //   ],
-    //   "commands": [
-    //     ":w!"
-    //   ]
-    // },
     {
       "before": [
         "b",
@@ -181,7 +219,7 @@
       "commands": [
         "editor.action.quickFix"
       ]
-    },
+    }
   ],
   "vim.insertModeKeyBindings": [
     {
@@ -192,33 +230,100 @@
       "after": [
         "<Esc>"
       ]
-    },
+    }
   ],
- "vim.useSystemClipboard": true,
+  "vim.useSystemClipboard": true,
   "vim.easymotion": true,
-  "vim.statusBarColorControl": true,
-  "vim.statusBarColors.normal": ["#1d2021", "#a89984"],
-  "vim.statusBarColors.insert": ["#1d2021", "#a89984"],
-  "vim.statusBarColors.visual": ["#1d2021", "#a89984"],
-  "vim.statusBarColors.visualline": ["#1d2021", "#a89984"],
-  "vim.statusBarColors.visualblock": ["#1d2021", "#a89984"],
-  "vim.statusBarColors.replace": "#1d2021",
-  "vim.statusBarColors.commandlineinprogress": "#1d2021",
-  "vim.statusBarColors.searchinprogressmode": "#1d2021",
-  "vim.statusBarColors.easymotionmode": "#1d2021",
-  "vim.statusBarColors.easymotioninputmode": "#1d2021",
-  "vim.statusBarColors.surroundinputmode": "#1d2021",
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#1d2021",
-    "statusBar.noFolderBackground": "#1d2021",
-    "statusBar.debuggingBackground": "#1d2021",
-    "statusBar.foreground": "#a89984",
-    "statusBar.debuggingForeground": "#a89984"
-  },
+  // "vim.statusBarColorControl": true,
+  // "vim.statusBarColors.normal": [
+  //   "#1d2021",
+  //   "#ffffff"
+  // ],
+  // "vim.statusBarColors.insert": [
+  //   "#1d2021",
+  //   "#ffffff"
+  // ],
+  // "vim.statusBarColors.visual": [
+  //   "#1d2021",
+  //   "#ffffff"
+  // ],
+  // "vim.statusBarColors.visualline": [
+  //   "#1d2021",
+  //   "#ffffff"
+  // ],
+  // "vim.statusBarColors.visualblock": [
+  //   "#1d2021",
+  //   "#ffffff"
+  // ],
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "window.menuBarVisibility": "toggle",
-  "breadcrumbs.enabled": false,
   "editor.minimap.enabled": false,
-  "editor.renderWhitespace": "all",
-  "workbench.colorTheme": "Gruvbox Material Dark",
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "workbench.sideBar.location": "right",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "workbench.activityBar.location": "top",
+  "editor.lineNumbers": "relative",
+  "window.menuBarVisibility": "compact",
+  "editor.formatOnSave": true,
+  "apc.electron": {
+    "frame": false,
+    "titleBarStyle": "hidden",
+    "opacity": 0.70,
+    "transparent": true
+  },
+  "apc.menubar.compact": true,
+  "apc.font.family": "FiraCode NFM,Aial Rounded MT Bold",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "notebook.output.fontFamily": "FiraCode NFM,Aial Rounded MT Bold",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "cSpell.userWords": [
+    "approvedby",
+    "fieldname",
+    "getbyid",
+    "getbyname",
+    "newfromcart",
+    "occassion",
+    "paymentstatus",
+    "permitedroutes",
+    "toggleactive"
+  ],
+  "window.density.editorTabHeight": "compact",
+  "continue.enableTabAutocomplete": true,
+  "supermaven.enable": {
+    "*": true
+  },
+  "zig.path": "zig",
+  "supermaven.allowGitignore": true,
+  "zig.zls.enabled": "on",
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "editor.guides.bracketPairs": "active",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
+  "workbench.colorTheme": "GitHub Dark Default",
+  "github.copilot.chat.edits.codesearch.enabled": true,
+  "github.copilot.chat.codeGeneration.instructions": [],
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "workbench.statusBar.visible": false,
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "window.customTitleBarVisibility": "windowed"
 }
